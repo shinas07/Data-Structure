@@ -8,7 +8,6 @@ class Queue:
     def dequeue(self):
         if self.queue is not None:
             return self.queue.pop(0)
-        
 
     def dispaly(self):
         print(self.queue)
