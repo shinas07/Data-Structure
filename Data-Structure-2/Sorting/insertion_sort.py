@@ -10,7 +10,7 @@ def insertion_sort(arr):
 
         arr[j+1] = key
     
-    return arr
+    return arr  
 
 arr = [34, 22, 66, 2, 12,4]
 print(insertion_sort(arr))
