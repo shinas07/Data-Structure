@@ -1,4 +1,4 @@
-class stack:
+class Stack:
 
     def __init__(self):
         self.items = []
@@ -12,16 +12,24 @@ class stack:
             self.items.pop()
             return popitem
         else:
-            raise IndexError('Stack is empty')
+            raise IndexError("Stack is empty")
         
     def peek(self):
         if not self.items is None:
             return self.items[-1]
         else:
-            raise IndexError('Stack is empty')
+            raise IndexError("Stack is empty")
         
-string = 'shians'
-stack = stack()
+
+string = "shinas"
+stack = Stack()
+
 for c in string:
     stack.push(c)
 
+reversed_string = ""
+for i in range(len(string)):
+    popitem = stack.pop()
+    reversed_string+=popitem
+
+print(reversed_string)

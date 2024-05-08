@@ -1,5 +1,3 @@
-arr = [9, 3, 1, 6, 2, 4]
-
 
 def selection_sort(arr):
     for i in range(len(arr)):

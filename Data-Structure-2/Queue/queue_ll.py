@@ -28,7 +28,11 @@ class Queue:
         return data
     
     def peek(self):
-        return self.head.data
+        if self.head is None:
+            print("Queue is empty")
+            return None
+        else:
+            return self.head.data
 
 queue = Queue()
 

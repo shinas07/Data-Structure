@@ -8,8 +8,9 @@ class MinHeap:
         self._heapify_up()
 
     def remove(self):
+        popped = []
         if len(self.heap) > 1:
-            self.heap[0], self.heap[len(self.heap) - 1] = self.heap[len(self.heap) - 1], self.heap[0]
+            self.heap[0], self.heap[- 1] = self.heap[- 1], self.heap[0]
             self._heapify_down()
         elif len(self.heap) == 1:
             popped = self.heap.pop()
@@ -60,5 +61,6 @@ heap.insert(81)
 heap.insert(5)
 heap.insert(7)
 heap.insert(11)
+heap.remove()
 
 print(heap.heap)

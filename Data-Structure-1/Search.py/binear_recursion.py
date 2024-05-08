@@ -12,7 +12,7 @@ def binary_search(arr, low, high, target):
     return -1
 
 
-arr = [2, 13, 9, 4, 34, 59, 33, 29]
+arr = [2, 5, 9, 15, 22, 34, 59]
 index = binary_search(arr, 0, len(arr) - 1, 59) 
 print(index)
 

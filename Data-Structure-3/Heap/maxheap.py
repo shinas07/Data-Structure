@@ -21,7 +21,7 @@ class MaxHeap:
 
         
 
-    def _heapify_up(self):
+    def _heapify_up(self):  
         """
         Move the last element up to its correct position in the Max Heap.
         """
